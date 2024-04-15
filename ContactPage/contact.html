@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="../NewsPage/images/iconicon.png"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <box-icon name="tree" type="solid" color="#207b05"></box-icon>
+    <title>Grenergy</title>
+  </head>
+
+  <body>
+    <div id="navbarContainer"></div>
+    <script>
+      $(document).ready(function () {
+        $("#navbarContainer").load("../Navbar/navbar.html");
+      });
+    </script>
+  
+    <div id="content">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <input type="text" id="country" name="country" placeholder="Country" required>
+
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+
+                <textarea id="message" name="message" rows="6" placeholder="Message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footerContainer"></div>
+        <script>
+            $(document).ready(function() {
+                $('#footerContainer').load('../Footer/footer.html');
+            });
+        </script>
+    </footer>
+
+</body>
+
+</html>
